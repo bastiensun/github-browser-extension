@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function IndexPopup() {
+const Popup = (): JSX.Element => {
   const [data, setData] = useState("");
 
   return (
@@ -13,18 +13,18 @@ function IndexPopup() {
     >
       <h2>
         Welcome to your
-        <a href="https://www.plasmo.com" target="_blank">
+        <a href="https://www.plasmo.com" rel="noreferrer" target="_blank">
           {" "}
           Plasmo
         </a>{" "}
         Extension!
       </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
+      <input onChange={(event) => setData(event.target.value)} value={data} />
+      <a href="https://docs.plasmo.com" rel="noreferrer" target="_blank">
         View Docs
       </a>
     </div>
   );
-}
+};
 
-export default IndexPopup;
+export default Popup;

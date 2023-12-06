@@ -5,8 +5,8 @@
   "description": "A GitHub browser extension.",
   "author": "Bastien Sun",
   "scripts": {
-    "dev": "plasmo dev",
     "build": "plasmo build",
+    "dev": "plasmo dev",
     "test": "plasmo test"
   },
   "dependencies": {
@@ -19,6 +19,9 @@
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-canonical": "^42.8.0",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
   },
