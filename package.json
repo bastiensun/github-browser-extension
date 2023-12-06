@@ -2,12 +2,10 @@
   "name": "github-browser-extension",
   "displayName": "GitHub Browser Extension",
   "version": "0.0.1",
-  "description": "A GitHub browser extension.",
-  "author": "Bastien Sun",
+  "description": "Hide pull request conversations resolved by you.",
   "scripts": {
     "build": "plasmo build",
-    "dev": "plasmo dev",
-    "test": "plasmo test"
+    "dev": "plasmo dev"
   },
   "dependencies": {
     "plasmo": "0.84.0",
@@ -24,10 +22,5 @@
     "eslint-config-canonical": "^42.8.0",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
-  },
-  "manifest": {
-    "host_permissions": [
-      "https://*/*"
-    ]
   }
 }
